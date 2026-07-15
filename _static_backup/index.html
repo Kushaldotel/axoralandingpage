@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Axora Automation Solutions — AI Automation for Service Businesses</title>
+  <meta name="description" content="Axora builds AI automation systems that read your inbox, extract data from documents, and answer customer questions — grounded, checked, and always under your control." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><circle cx='16' cy='16' r='13' fill='none' stroke='%2322D3EE' stroke-width='3'/><circle cx='16' cy='16' r='5' fill='%2322D3EE'/></svg>" />
+</head>
+<body>
+
+  <!-- ambient background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-1" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb-2" aria-hidden="true"></div>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="logo" aria-label="Axora home">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" stroke="url(#logoGrad)" stroke-width="2.5"/>
+          <circle cx="16" cy="16" r="4.5" fill="#22D3EE"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32">
+              <stop stop-color="#22D3EE"/><stop offset="1" stop-color="#6366F1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Axora<em>.</em></span>
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#work">Case Studies</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Axora</a>
+        <a href="#reach" class="btn btn-sm btn-primary">Book a Call</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <div class="hero-badge reveal">
+            <span class="pulse-dot"></span>
+            AI AUTOMATION FOR SERVICE BUSINESSES
+          </div>
+          <h1 class="reveal delay-1">
+            Automate the work<br class="br-lg" />
+            your team <span class="grad-text">shouldn't be doing by hand.</span>
+          </h1>
+          <p class="hero-sub reveal delay-2">
+            Axora builds AI systems that read your inbox, extract data from messy documents,
+            and answer customer questions from your own content — checked, cited, and always
+            under your control.
+          </p>
+          <div class="hero-cta reveal delay-3">
+            <a href="#reach" class="btn btn-primary btn-lg">
+              Book a Free Call
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#work" class="btn btn-ghost btn-lg">See Our Work</a>
+          </div>
+          <div class="hero-stats reveal delay-4">
+            <div class="stat">
+              <span class="stat-num" data-count-text="Hours → Seconds">Hours → Seconds</span>
+              <span class="stat-label">Response time</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num"><span data-count="40">0</span>+</span>
+              <span class="stat-label">Leads handled weekly</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num"><span data-count="100">0</span>s</span>
+              <span class="stat-label">Docs processed daily</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- animated workflow graph -->
+        <div class="hero-visual reveal delay-2" aria-hidden="true">
+          <svg class="flow-svg" viewBox="0 0 560 480" fill="none">
+            <defs>
+              <linearGradient id="wireGrad" x1="0" y1="0" x2="560" y2="480">
+                <stop stop-color="#22D3EE"/><stop offset="1" stop-color="#6366F1"/>
+              </linearGradient>
+              <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+                <feGaussianBlur stdDeviation="6" result="b"/>
+                <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <!-- wires -->
+            <path class="wire" id="w1" d="M96 120 C 190 120, 200 220, 268 232"/>
+            <path class="wire" id="w2" d="M96 240 C 170 240, 190 236, 268 240"/>
+            <path class="wire" id="w3" d="M96 360 C 190 360, 200 260, 268 248"/>
+            <path class="wire" id="w4" d="M348 240 C 410 240, 420 150, 470 142"/>
+            <path class="wire" id="w5" d="M348 240 C 410 240, 420 330, 470 338"/>
+
+            <!-- travelling pulses -->
+            <circle class="pulse" r="4"><animateMotion dur="2.6s" repeatCount="indefinite"><mpath href="#w1"/></animateMotion></circle>
+            <circle class="pulse" r="4"><animateMotion dur="2.6s" begin="0.9s" repeatCount="indefinite"><mpath href="#w2"/></animateMotion></circle>
+            <circle class="pulse" r="4"><animateMotion dur="2.6s" begin="1.7s" repeatCount="indefinite"><mpath href="#w3"/></animateMotion></circle>
+            <circle class="pulse pulse-out" r="4"><animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite"><mpath href="#w4"/></animateMotion></circle>
+            <circle class="pulse pulse-out" r="4"><animateMotion dur="2.2s" begin="1.6s" repeatCount="indefinite"><mpath href="#w5"/></animateMotion></circle>
+          </svg>
+
+          <!-- input nodes -->
+          <div class="flow-node node-in" style="--x:0; --y:78;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+            <span>Inbox</span>
+          </div>
+          <div class="flow-node node-in" style="--x:0; --y:198;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+            <span>Documents</span>
+          </div>
+          <div class="flow-node node-in" style="--x:0; --y:318;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <span>Questions</span>
+          </div>
+
+          <!-- core AI node -->
+          <div class="flow-core">
+            <div class="core-ring"></div>
+            <div class="core-body">
+              <span class="core-title">AI</span>
+              <span class="core-sub">read · sort · check</span>
+            </div>
+          </div>
+
+          <!-- output nodes -->
+          <div class="flow-node node-out" style="--x:434; --y:100;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+            <span>Clean data</span>
+          </div>
+          <div class="flow-node node-out" style="--x:434; --y:296;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4z"/></svg>
+            <span>Ready to send</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-fade" aria-hidden="true"></div>
+    </section>
+
+    <!-- ================= TRUST BAR ================= -->
+    <section class="trustbar">
+      <div class="container trustbar-inner reveal">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+          Human approves every send
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 15l2 2 4-4"/></svg>
+          Every answer has a source
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          Live in weeks, not months
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          Built on real engineering
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">What we automate</span>
+          <h2>The repetitive work that quietly<br class="br-lg" /> eats your team's hours.</h2>
+          <p>If it arrives as an email, a PDF, or the same question for the hundredth time — we can automate it, with a person kept in control.</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6L22 7"/></svg>
+            </div>
+            <h3>Inbox &amp; Lead Automation</h3>
+            <p>AI reads every incoming email, separates real leads from noise, extracts the details, and drafts the reply with a branded quote attached. You review and click send.</p>
+            <ul class="card-list">
+              <li>Leads sorted the second they arrive</li>
+              <li>Quotes generated automatically</li>
+              <li>Nothing sent without your approval</li>
+            </ul>
+          </article>
+
+          <article class="card reveal delay-1">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+            </div>
+            <h3>Document Data Extraction</h3>
+            <p>Invoices, receipts, certificates and forms — read by AI, validated by rules, and delivered as clean structured data into the systems you already use.</p>
+            <ul class="card-list">
+              <li>Any layout, no templates to build</li>
+              <li>Self-checking with validation rules</li>
+              <li>Minutes of retyping → seconds</li>
+            </ul>
+          </article>
+
+          <article class="card reveal delay-2">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M9 9h6M9 13h3"/></svg>
+            </div>
+            <h3>AI Support Assistants</h3>
+            <p>An assistant that answers from your own documents, cites the source for every answer, and hands off to a person when it should — never a guess.</p>
+            <ul class="card-list">
+              <li>Grounded in your content only</li>
+              <li>Source attached to every answer</li>
+              <li>Clean handoff to a human</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CASE STUDIES ================= -->
+    <section class="section section-alt" id="work">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Case studies</span>
+          <h2>Real systems, shipped<br class="br-lg" /> and working.</h2>
+          <p>Three builds that show how we work — the problem, the system, and the numbers. Full write-ups available as PDFs.</p>
+        </div>
+
+        <div class="case-grid">
+          <a class="case-card reveal" href="EICR_Portfolio.pdf" target="_blank" rel="noopener">
+            <div class="case-top">
+              <span class="case-tag">Lead Automation</span>
+              <span class="case-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+            <h3>EICR Lead Automation</h3>
+            <p>An AI layer over a UK electrical firm's inbox: sorts real leads from noise, extracts the eight fields needed to quote, and drafts the reply with a branded quote PDF attached.</p>
+            <div class="case-metrics">
+              <div><strong>Hours → Seconds</strong><span>response time</span></div>
+              <div><strong>~15 → ~2 min</strong><span>admin per lead</span></div>
+              <div><strong>40+ / week</strong><span>leads handled</span></div>
+            </div>
+            <span class="case-link">Read the case study</span>
+          </a>
+
+          <a class="case-card reveal delay-1" href="DocExtraction_Portfolio.pdf" target="_blank" rel="noopener">
+            <div class="case-top">
+              <span class="case-tag">Data Extraction</span>
+              <span class="case-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+            <h3>Document Data Extraction</h3>
+            <p>Messy documents in, clean structured data out. Reads any layout — invoices, receipts, certificates — validates its own work, and flags only what it's unsure about.</p>
+            <div class="case-metrics">
+              <div><strong>Minutes → Seconds</strong><span>per document</span></div>
+              <div><strong>Only the unsure</strong><span>needs review</span></div>
+              <div><strong>Hundreds / day</strong><span>handled</span></div>
+            </div>
+            <span class="case-link">Read the case study</span>
+          </a>
+
+          <a class="case-card reveal delay-2" href="AISupport_Portfolio.pdf" target="_blank" rel="noopener">
+            <div class="case-top">
+              <span class="case-tag">AI Assistant</span>
+              <span class="case-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </span>
+            </div>
+            <h3>AI Support Assistant</h3>
+            <p>Answers customer questions from the business's own documents with a source attached to every answer — and hands off cleanly to a person instead of guessing.</p>
+            <div class="case-metrics">
+              <div><strong>Instant</strong><span>response time</span></div>
+              <div><strong>Zero</strong><span>made-up answers</span></div>
+              <div><strong>Freed up</strong><span>your team</span></div>
+            </div>
+            <span class="case-link">Read the case study</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROCESS ================= -->
+    <section class="section" id="process">
+      <div class="container process-grid">
+        <div class="process-copy">
+          <div class="section-head section-head-left reveal">
+            <span class="eyebrow">How we work</span>
+            <h2>From first call to a system running in your business.</h2>
+            <p>No six-month projects, no black boxes. We find the highest-value bottleneck, build the automation around it, and keep a person in control of everything that goes out.</p>
+            <a href="#reach" class="btn btn-primary">Start With a Free Call</a>
+          </div>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-num">01</span>
+            <div>
+              <h3>Discovery call</h3>
+              <p>We map where your team's hours actually go — the inbox, the retyping, the repeated questions — and pick the automation with the fastest payback.</p>
+            </div>
+          </li>
+          <li class="step reveal delay-1">
+            <span class="step-num">02</span>
+            <div>
+              <h3>Design &amp; build</h3>
+              <p>We design the workflow around your tools — email, CRM, spreadsheets, accounting — and build it with validation and human approval baked in.</p>
+            </div>
+          </li>
+          <li class="step reveal delay-2">
+            <span class="step-num">03</span>
+            <div>
+              <h3>Test on real work</h3>
+              <p>The system runs on your real emails and documents while your team reviews everything, until the accuracy earns your trust.</p>
+            </div>
+          </li>
+          <li class="step reveal delay-3">
+            <span class="step-num">04</span>
+            <div>
+              <h3>Launch &amp; support</h3>
+              <p>It goes live in your day-to-day, we monitor and tune it, and your team spends their time only on the work that genuinely needs a human.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ================= WHY AXORA ================= -->
+    <section class="section section-alt" id="why">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Axora</span>
+          <h2>Automation you can actually<br class="br-lg" /> put in front of a customer.</h2>
+          <p>Most AI demos fall apart on real work. Ours are built on one rule: the system proves itself, or it hands off to a person.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="m9 12 2 2 4-4"/></svg>
+            </div>
+            <h3>Never guesses</h3>
+            <p>Answers come from your content with a source attached, or the system says "I don't know" and hands off. No confident made-up answers.</p>
+          </div>
+          <div class="why-item reveal delay-1">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Human in the loop</h3>
+            <p>Nothing reaches your customers without a person approving it. The machine does the work; you stay in charge of what goes out.</p>
+          </div>
+          <div class="why-item reveal delay-2">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 16 4-4-4-4M6 8l-4 4 4 4M14.5 4l-5 16"/></svg>
+            </div>
+            <h3>Real engineering</h3>
+            <p>Vector search, validation pipelines, review queues, Django and Celery backends — production systems, not no-code demos that break in a month.</p>
+          </div>
+          <div class="why-item reveal delay-3">
+            <div class="why-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg>
+            </div>
+            <h3>Fits your tools</h3>
+            <p>Output lands in the spreadsheet, CRM, or accounting software you already use — in the format you already use. No rip-and-replace.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= REACH US / CALENDLY ================= -->
+    <section class="section reach" id="reach">
+      <div class="container">
+        <div class="reach-panel reveal">
+          <div class="reach-copy">
+            <span class="eyebrow">Reach us</span>
+            <h2>Let's find the hours hiding in your workflow.</h2>
+            <p>Book a free 30-minute call. We'll look at how enquiries, documents and questions flow through your business and tell you honestly what's worth automating — and what isn't.</p>
+            <ul class="reach-list">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Free, no obligation
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                Honest advice on what to automate first
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+                A clear next step, whether you work with us or not
+              </li>
+            </ul>
+            <p class="reach-mail">
+              Prefer email?
+              <a href="mailto:hello@axora.solutions">hello@axora.solutions</a>
+            </p>
+          </div>
+          <div class="reach-widget">
+            <!-- Calendly inline widget. Replace data-url with your Calendly link. -->
+            <div class="calendly-inline-widget"
+                 data-url="https://calendly.com/YOUR_CALENDLY_USERNAME/30min?hide_gdpr_banner=1&background_color=0a101f&text_color=e6edf7&primary_color=22d3ee"
+                 style="min-width:320px;height:640px;"></div>
+            <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#top" class="logo" aria-label="Axora home">
+        <svg class="logo-mark" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="13" stroke="url(#logoGrad2)" stroke-width="2.5"/>
+          <circle cx="16" cy="16" r="4.5" fill="#22D3EE"/>
+          <defs>
+            <linearGradient id="logoGrad2" x1="0" y1="0" x2="32" y2="32">
+              <stop stop-color="#22D3EE"/><stop offset="1" stop-color="#6366F1"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span>Axora<em>.</em></span>
+      </a>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#work">Case Studies</a>
+        <a href="#process">Process</a>
+        <a href="#reach">Reach Us</a>
+      </nav>
+      <p class="footer-copy">© <span id="year"></span> Axora Automation Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

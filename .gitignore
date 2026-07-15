@@ -1,0 +1,50 @@
+# ── Secrets — never commit ──────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.key
+
+# ── Node / Next.js ──────────────────────────────────────────────────────────
+node_modules/
+.pnp
+.pnp.js
+.next/
+out/
+build/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Testing / coverage
+coverage/
+.nyc_output/
+
+# ── Editors / OS ────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ── Internal docs / specs — not part of the app ─────────────────────────────
+# NOTE: public/*.pdf are intentionally NOT ignored —
+# they are served assets linked from the Case Studies section.
+*.docx
+*.doc
+/*.pdf
+
+# ── Misc ────────────────────────────────────────────────────────────────────
+.vercel
+tmp/
+temp/
